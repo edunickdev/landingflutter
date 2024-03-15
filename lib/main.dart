@@ -10,16 +10,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void main() async {
+    Future<FlusmicResponse<Document<Map<String, dynamic>>>> main() async {
       ///Create a new Flusmic instance
       final flusmic = Flusmic(
-          prismicEndpoint: 'https://canto-de-la-tierra.cdn.prismic.io/api/v2',
-          defaultAuthToken: '');
+        prismicEndpoint: 'https://canto-de-la-tierra.cdn.prismic.io/api/v2',
+        defaultAuthToken: '',
+      );
 
       ///Use one of our basic methods
-      final rootDocument = await flusmic.getRootDocument();
-      print('Total of results: ${rootDocument.results.length}');
-      print('--');
+      final rootDocument = await flusmic.getDocumentsByType("destacados");
+
+      return rootDocument;
     }
 
     main();

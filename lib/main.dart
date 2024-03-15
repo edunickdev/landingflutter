@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       print('--');
     }
 
-    // main();
+    main();
 
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,

@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       ///Use one of our basic methods
       final rootDocument = await flusmic.getDocumentsByType("destacados");
 
+      print(rootDocument.results.length);
       return rootDocument;
     }
 

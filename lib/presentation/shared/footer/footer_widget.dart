@@ -25,13 +25,13 @@ class FooterWidget extends StatelessWidget {
           const Expanded(
             child: Padding(
               padding:
-                  EdgeInsets.only(left: 120, right: 60, top: 80, bottom: 30),
+                  EdgeInsets.symmetric(horizontal: 60, vertical: 30),
               child: LeftColumnWidget(),
             ),
           ),
-          Expanded(
-            child: RightColumnWidget(height: height, width: width),
-          ),
+          // Expanded(
+          //   child: RightColumnWidget(height: height, width: width),
+          // ),
         ],
       ),
     );

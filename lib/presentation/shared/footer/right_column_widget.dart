@@ -20,21 +20,22 @@ class RightColumnWidget extends StatelessWidget {
     final message = TextEditingController();
     final contactForm = GlobalKey<FormState>();
 
+
     return Column(
       children: [
         Container(
           height: height,
           width: width,
           child: Padding(
-            padding:
-                const EdgeInsets.only(left: 60, right: 60, top: 60, bottom: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
             child: Form(
               key: contactForm,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const MyText(text: 'Nombres y apellidos', color: primary),
-                  const SizedBox(height: 5),
+                  const SizedBox(height: 10),
                   TextFormField(
                     controller: names,
                     validator: (value) {
@@ -46,11 +47,12 @@ class RightColumnWidget extends StatelessWidget {
                       return null;
                     },
                     decoration: const InputDecoration(
-                        hintText: "Nombres y Apellidos",
-                        filled: true,
-                        fillColor: Colors.white),
+                      hintText: "Nombres y Apellidos",
+                      filled: true,
+                      fillColor: Colors.white,
+                    ),
                   ),
-                  const SizedBox(height: 5),
+                  const SizedBox(height: 10),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [

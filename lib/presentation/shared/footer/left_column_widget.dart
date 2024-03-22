@@ -14,19 +14,17 @@ class LeftColumnWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Flexible(
-          child: Text(
-            "Encuentranos en nuestras redes.",
-            style: TextStyle(
-                color: primary, fontWeight: FontWeight.bold, fontSize: 20),
-          ),
+        Text(
+          "Encuentranos en nuestras redes.",
+          style: TextStyle(
+              color: primary, fontWeight: FontWeight.bold, fontSize: size.height * 0.02),
         ),
-        const SizedBox(height: 30),
+        SizedBox(height: size.height * 0.03),
         Text(
           "Pariatur in elit occaecat occaecat magna non non sit.",
-          style: TextStyle(color: Colors.white, fontSize: size.width / 60),
+          style: TextStyle(color: Colors.white, fontSize: size.height * 0.03),
         ),
-        const SizedBox(height: 30),
+        SizedBox(height: size.height * 0.03),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -37,7 +35,7 @@ class LeftColumnWidget extends StatelessWidget {
                   color: primary,
                 ),
                 const SizedBox(width: 10),
-                Text("Sunt sit est proident deserunt reprehenderit.", style: TextStyle(color: primary, fontSize: size.width / 120),)
+                Text("Sunt sit est proident deserunt reprehenderit.", style: TextStyle(color: primary, fontSize: size.height * 0.02),)
               ],
             ),
             const SizedBox(height: 20),
@@ -48,7 +46,7 @@ class LeftColumnWidget extends StatelessWidget {
                   color: primary,
                 ),
                 const SizedBox(width: 10),
-                Text("Adipisicing nulla id dolore nostrud sint.", style: TextStyle(color: primary, fontSize: size.width / 120),)
+                Text("Adipisicing nulla id dolore nostrud sint.", style: TextStyle(color: primary, fontSize: size.height * 0.02),)
               ],
             ),
             const SizedBox(height: 20),
@@ -59,7 +57,7 @@ class LeftColumnWidget extends StatelessWidget {
                   color: primary,
                 ),
                 const SizedBox(width: 10),
-                Text("Ipsum fugiat proident ullamco laboris qui officia.", style: TextStyle(color: primary, fontSize: size.width / 120),)
+                Text("Ipsum fugiat proident ullamco laboris qui officia.", style: TextStyle(color: primary, fontSize: size.height * 0.02),)
               ],
             ),
             const SizedBox(height: 20),
@@ -70,7 +68,7 @@ class LeftColumnWidget extends StatelessWidget {
                   color: primary,
                 ),
                 const SizedBox(width: 10),
-                Text("Magna ea laborum id veniam nulla.", style: TextStyle(color: primary, fontSize: size.width / 120),)
+                Text("Magna ea laborum id veniam nulla.", style: TextStyle(color: primary, fontSize: size.height * 0.02),)
               ],
             ),
             const SizedBox(height: 20),
